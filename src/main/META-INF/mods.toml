@@ -1,47 +1,35 @@
 modLoader="lowcodefml"
 loaderVersion="[46,]"
-license="None"
+license="AGPL v3.0"
+issueTrackerURL="https://github.com/Mango-Minecraft-Project/Create_Mortar/issues"
 
 [[mods]]
 modId="create_mortar"
-version="0.1.6"
-displayname="Create: Compatible"
-description="Recipe changes and create add on compat"
-dependencies="AFTER:*"
+version="0.1.0"
+displayName="Create: Mortar - Mango Edition"
+description="A Create Addon Compat Mod / Data Pack"
 logoFile = "Mortar.png"
 
 [[dependencies.create_mortar]]
 modId="minecraft"
-mandatory=true
 versionRange="[1.20.1]"
-ordering="NONE"
-side="BOTH"
 
 [[dependencies.create_mortar]]
 modId="create"
-mandatory=true
 versionRange="[0.5.1.f,)"
 ordering="AFTER"
-side="BOTH"
 
 [[dependencies.create_mortar]]
 modId="tfmg"
-mandatory= false
+mandatory=false
 versionRange="[0.8.0b,)"
-ordering="AFTER"
-side="BOTH"
 
 [[dependencies.create_mortar]]
 modId="railways"
-mandatory= false
+mandatory=false
 versionRange="[1.6.1+forge-mc1.20.1,)"
-ordering="AFTER"
-side="BOTH"
-
 
 [[dependencies.create_mortar]]
 modId="createbigcannons"
-mandatory= false
+mandatory=false
 versionRange="[0.5.3.b,)"
-ordering="AFTER"
-side="BOTH"
