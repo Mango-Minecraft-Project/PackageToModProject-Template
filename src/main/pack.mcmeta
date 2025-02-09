@@ -1,6 +1,14 @@
 {
   "pack": {
     "pack_format": 15,
-    "description": "A Create Addon Compat mod/datapack"
+    "description": "A Create Addon Compat Mod / Data Pack"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "createbigcannons",
+        "path": "recipes/compacting/(forge_bronze_ingot|forge_cast_iron_ingot|forge_cast_iron_nugget|forge_steel_ingot).json"
+      }
+    ]
   }
 }
