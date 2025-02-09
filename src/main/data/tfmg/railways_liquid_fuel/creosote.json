@@ -1,6 +1,4 @@
 {
-  "fluids": [
-    "tfmg:creosote"
-  ],
+  "fluids": ["tfmg:creosote"],
   "fuel_ticks": 600
 }

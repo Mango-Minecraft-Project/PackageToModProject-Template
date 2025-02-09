@@ -1,14 +1,10 @@
-
 {
   "type": "create:compacting",
   "ingredients": [
-
     {
       "fluidTag": "forge:liquid_plastic",
       "amount": 200
-      }
-
-
+    }
   ],
   "results": [
     {

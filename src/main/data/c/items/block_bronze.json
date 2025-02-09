@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-      "create_dd:bronze_block",
-  ]
+  "values": ["create_dd:bronze_block"]
 }

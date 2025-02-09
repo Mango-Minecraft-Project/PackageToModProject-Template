@@ -1,6 +1,4 @@
 {
-  "fluids": [
-    "createaddition:biodiesel"
-  ],
+  "fluids": ["createaddition:biodiesel"],
   "fuel_ticks": 2400
 }

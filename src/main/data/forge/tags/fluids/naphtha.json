@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-        "tfmg:naphtha"
-              ]
+  "values": ["tfmg:naphtha"]
 }

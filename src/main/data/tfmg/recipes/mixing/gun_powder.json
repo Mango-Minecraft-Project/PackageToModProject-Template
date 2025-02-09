@@ -1,4 +1,3 @@
-
 {
   "type": "create:mixing",
   "ingredients": [
@@ -13,23 +12,19 @@
     },
     {
       "item": "minecraft:charcoal"
-
     },
 
     {
       "item": "minecraft:charcoal"
-
     },
     {
       "tag": "forge:dusts/sulfur"
-
     }
   ],
   "results": [
     {
       "item": "minecraft:gunpowder",
       "count": 6
-
     }
   ]
 }

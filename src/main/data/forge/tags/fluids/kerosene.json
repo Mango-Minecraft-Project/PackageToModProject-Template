@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-        "tfmg:kerosene"
-              ]
+  "values": ["tfmg:kerosene"]
 }

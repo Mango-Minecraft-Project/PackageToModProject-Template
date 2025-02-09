@@ -11,12 +11,10 @@
     {
       "count": 1,
       "item": "create_dd:bronze_ingot"
-    }
-  ,
+    },
     {
       "count": 1,
       "item": "create_dd:bronze_block"
     }
-
   ]
 }

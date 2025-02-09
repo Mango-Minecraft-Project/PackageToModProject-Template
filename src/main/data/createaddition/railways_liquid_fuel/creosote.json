@@ -1,6 +1,4 @@
 {
-  "fluids": [
-    "createadditions:creosote"
-  ],
+  "fluids": ["createadditions:creosote"],
   "fuel_ticks": 600
 }

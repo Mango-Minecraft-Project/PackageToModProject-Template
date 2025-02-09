@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "createbigcannons:cast_iron_nugget"
-  ]
+  "values": ["createbigcannons:cast_iron_nugget"]
 }

@@ -1,7 +1,6 @@
 {
   "type": "tfmg:advanced_distillation",
   "ingredients": [
-
     {
       "fluidTag": "forge:crude_oil",
       "nbt": {},
@@ -30,6 +29,4 @@
       "amount": 30
     }
   ]
-
-
 }

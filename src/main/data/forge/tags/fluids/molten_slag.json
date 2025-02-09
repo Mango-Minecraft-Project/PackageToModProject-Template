@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-        "tfmg:molten_slag"
-              ]
+  "values": ["tfmg:molten_slag"]
 }

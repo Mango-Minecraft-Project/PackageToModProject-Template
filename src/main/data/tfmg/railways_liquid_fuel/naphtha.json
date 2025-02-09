@@ -1,6 +1,4 @@
 {
-  "fluids": [
-    "tfmg:naphtha"
-  ],
+  "fluids": ["tfmg:naphtha"],
   "fuel_ticks": 2400
 }

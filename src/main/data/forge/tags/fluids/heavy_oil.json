@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-        "tfmg:heavy_oil"
-              ]
+  "values": ["tfmg:heavy_oil"]
 }

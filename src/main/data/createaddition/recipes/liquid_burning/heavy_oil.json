@@ -1,10 +1,10 @@
 {
-    "type":"createaddition:liquid_burning",
-    "input": {
-          "fluid": "tfmg:heavy_oil",
+  "type": "createaddition:liquid_burning",
+  "input": {
+    "fluid": "tfmg:heavy_oil",
 
-          "amount": 1000
-    },
-    "burnTime": 19200,
-    "superheated": false
+    "amount": 1000
+  },
+  "burnTime": 19200,
+  "superheated": false
 }

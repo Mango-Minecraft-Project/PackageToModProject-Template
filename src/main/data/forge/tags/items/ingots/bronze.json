@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     {
-      "id":  "create_dd:bronze_ingot",
+      "id": "create_dd:bronze_ingot",
       "required": false
-    } 
+    }
   ]
 }

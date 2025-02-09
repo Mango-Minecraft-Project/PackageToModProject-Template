@@ -2,12 +2,12 @@
   "replace": false,
   "values": [
     {
-      "id":  "createdeco:industrial_iron_nugget",
+      "id": "createdeco:industrial_iron_nugget",
       "required": false
     },
     {
-      "id":  "create_dd:industrial_iron_nugget",
+      "id": "create_dd:industrial_iron_nugget",
       "required": false
-    } 
+    }
   ]
 }

@@ -1,6 +1,4 @@
 {
-  "fluids": [
-    "tfmg:lpg"
-  ],
+  "fluids": ["tfmg:lpg"],
   "fuel_ticks": 4800
 }
