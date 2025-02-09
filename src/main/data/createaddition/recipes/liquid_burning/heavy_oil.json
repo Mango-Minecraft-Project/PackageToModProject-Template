@@ -1,8 +1,22 @@
 {
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "createaddition"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "tfmg"
+        }
+      ]
+    }
+  ],
   "type": "createaddition:liquid_burning",
   "input": {
     "fluid": "tfmg:heavy_oil",
-
     "amount": 1000
   },
   "burnTime": 19200,

@@ -1,13 +1,27 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "building",
-  "ingredients": [
+  "conditions": [
     {
-      "tag": "forge:ingots/cast_iron"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "createbigcannons"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "modid": "forge:ingots/cast_iron"
+          }
+        }
+      ]
     }
   ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [{ "tag": "forge:ingots/cast_iron" }],
   "result": {
-    "count": 9,
-    "item": "createbigcannons:cast_iron_nugget"
+    "item": "createbigcannons:cast_iron_nugget",
+    "count": 9
   }
 }

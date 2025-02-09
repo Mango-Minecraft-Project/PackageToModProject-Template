@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
   "fluids": ["tfmg:kerosene"],
   "fuel_ticks": 2400
 }

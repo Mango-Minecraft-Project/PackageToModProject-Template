@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
   "type": "tfmg:casting",
   "ingredients": [
     {
@@ -9,12 +15,12 @@
   "processingTime": 300,
   "results": [
     {
-      "count": 1,
-      "item": "tfmg:steel_ingot"
+      "item": "tfmg:steel_ingot",
+      "count": 1
     },
     {
-      "count": 1,
-      "item": "tfmg:steel_block"
+      "item": "tfmg:steel_block",
+      "count": 1
     }
   ]
 }

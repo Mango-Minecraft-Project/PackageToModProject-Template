@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
   "fluids": ["tfmg:creosote"],
   "fuel_ticks": 600
 }

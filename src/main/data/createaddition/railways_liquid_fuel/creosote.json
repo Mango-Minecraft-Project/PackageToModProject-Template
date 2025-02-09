@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "createaddition"
+    }
+  ],
   "fluids": ["createadditions:creosote"],
   "fuel_ticks": 600
 }

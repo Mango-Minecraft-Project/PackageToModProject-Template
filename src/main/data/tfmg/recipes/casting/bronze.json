@@ -1,4 +1,13 @@
 {
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        { "type": "forge:mod_loaded", "modid": "tfmg" },
+        { "type": "forge:mod_loaded", "modid": "create_dd" }
+      ]
+    }
+  ],
   "type": "tfmg:casting",
   "ingredients": [
     {
@@ -9,12 +18,12 @@
   "processingTime": 300,
   "results": [
     {
-      "count": 1,
-      "item": "create_dd:bronze_ingot"
+      "item": "create_dd:bronze_ingot",
+      "count": 1
     },
     {
-      "count": 1,
-      "item": "create_dd:bronze_block"
+      "item": "create_dd:bronze_block",
+      "count": 1
     }
   ]
 }

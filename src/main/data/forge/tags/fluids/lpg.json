@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["tfmg:lpg"]
+  "values": [{ "id": "tfmg:lpg", "required": false }]
 }

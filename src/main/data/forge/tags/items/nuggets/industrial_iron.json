@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["createbigcannons:cast_iron_nugget"]
+  "values": [{ "id": "createbigcannons:cast_iron_nugget", "required": false }]
 }

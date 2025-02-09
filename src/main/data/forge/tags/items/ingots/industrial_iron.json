@@ -1,13 +1,7 @@
 {
   "replace": false,
   "values": [
-    {
-      "id": "tfmg:cast_iron_ingot",
-      "required": false
-    },
-    {
-      "id": "createbigcannons:cast_iron_ingot",
-      "required": false
-    }
+    { "id": "tfmg:cast_iron_ingot", "required": false },
+    { "id": "createbigcannons:cast_iron_ingot", "required": false }
   ]
 }

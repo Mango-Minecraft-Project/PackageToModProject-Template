@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["tfmg:gasoline"]
+  "values": [{ "id": "tfmg:gasoline", "required": false }]
 }

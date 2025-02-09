@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["tfmg:creosote"]
+  "values": [{ "id": "tfmg:creosote", "required": false }]
 }

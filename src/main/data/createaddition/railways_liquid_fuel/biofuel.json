@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "createaddition"
+    }
+  ],
   "fluids": ["createaddition:flowing_bioethanol", "createaddition:bioethanol"],
   "fuel_ticks": 2400
 }
