@@ -2,7 +2,7 @@
 
 # Create: Mortar - Mango Edition
 
-<img src="src/main/Mortar.png" width="200px">
+<img src="src/main/pack.png" width="200px">
 
 <!-- | [![][curseforge-badge]][curseforge-download] | [![][discord-badge]][discord-link] |
 | -------------------------------------------- | ---------------------------------- | -->
