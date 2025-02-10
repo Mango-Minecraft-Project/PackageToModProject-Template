@@ -23,3 +23,4 @@ Fix mods.toml
 - create CHANGELOG.md - EvanHsieh0415
 - update CHANGELOG.md - EvanHsieh0415
 - rename Mortar.png to pack.png - EvanHsieh0415
+- re-package - EvanHsieh0415

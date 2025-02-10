@@ -13,9 +13,9 @@ def get_files(type):
     files = []
     match type:
         case "data_pack":
-            files = ["data/", "pack.mcmeta"]
+            files = ["data/", "pack.mcmeta", "pack.png"]
         case "mod":
-            files = ["data/", "META-INF/", "Mortar.png", "pack.mcmeta"]
+            files = ["data/", "META-INF/", "pack.png", "pack.mcmeta"]
     return map(lambda path: CWD / "src/main" / path, files)
 
 def get_version() -> str:
@@ -43,10 +43,14 @@ def package(type):
         type (str): type of package to create
     """
     version = get_version()
-    output_filename = get_output_filename(type)
+    output_filename = get_output_filename(type).format(version=version)
     files = get_files(type)
     
-    with zipfile.ZipFile(CWD / "versions" / output_filename.format(version=version), "w") as zip:
+    output_path = CWD / "versions" / output_filename
+    if output_path.exists():
+        output_path.unlink()
+    
+    with zipfile.ZipFile(CWD / "versions" / output_filename, "w") as zip:
         for file in files:
             if file.is_dir():
                 for path in file.rglob("*"):
