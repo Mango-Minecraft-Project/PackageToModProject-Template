@@ -1,35 +1,41 @@
-modLoader="lowcodefml"
-loaderVersion="[46,]"
-license="AGPL v3.0"
-issueTrackerURL="https://github.com/Mango-Minecraft-Project/Create_Mortar/issues"
+modLoader = "lowcodefml"
+loaderVersion = "[46,]"
+license = "AGPL v3.0"
+issueTrackerURL = "https://github.com/Mango-Minecraft-Project/Create_Mortar/issues"
+showAsDataPack = true
 
 [[mods]]
-modId="create_mortar"
-version="0.1.0"
-displayName="Create: Mortar - Mango Edition"
-description="A Create Addon Compat Mod / Data Pack"
+modId = "create_mortar"
+version = "0.1.1"
+displayName = "Create: Mortar - Mango Edition"
+description = "A Create Addon Compat Mod / Data Pack"
 logoFile = "Mortar.png"
+updateJSONURL = "https://api.modrinth.com/updates/eOYKttUR/forge_updates.json"
+authors = "Mango Jelly Pudding"
+displayURL = "https://modrinth.com/project/eOYKttUR"
 
 [[dependencies.create_mortar]]
-modId="minecraft"
-versionRange="[1.20.1]"
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1]"
 
 [[dependencies.create_mortar]]
-modId="create"
-versionRange="[0.5.1.f,)"
-ordering="AFTER"
+modId = "create"
+mandatory = true
+versionRange = "[0.5.1.f,)"
+ordering = "AFTER"
 
 [[dependencies.create_mortar]]
-modId="tfmg"
-mandatory=false
-versionRange="[0.8.0b,)"
+modId = "tfmg"
+mandatory = false
+versionRange = "[0.8.0b,)"
 
 [[dependencies.create_mortar]]
-modId="railways"
-mandatory=false
-versionRange="[1.6.1+forge-mc1.20.1,)"
+modId = "railways"
+mandatory = false
+versionRange = "[1.6.1+forge-mc1.20.1,)"
 
 [[dependencies.create_mortar]]
-modId="createbigcannons"
-mandatory=false
-versionRange="[0.5.3.b,)"
+modId = "createbigcannons"
+mandatory = false
+versionRange = "[0.5.3.b,)"
