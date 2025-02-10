@@ -20,4 +20,5 @@ Fix mods.toml
 - upload CHANGELOG.md - EvanHsieh0415
 - create package tool - EvanHsieh0415
 - upload versions - EvanHsieh0415
-- 
+- create CHANGELOG.md - EvanHsieh0415
+- update CHANGELOG.md - EvanHsieh0415
