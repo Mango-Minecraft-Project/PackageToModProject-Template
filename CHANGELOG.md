@@ -33,3 +33,11 @@ Update mods.toml for support 1.18.2 / 1.19.2
 - update mods.toml - [Mango-Minecraft-Project/Create_Mortar#1](https://github.com/Mango-Minecraft-Project/Create_Mortar/issues/1) (@QianFuv @EvanHsieh0415)
 - package files (@EvanHsieh0415)
 - upload CHANGELOG.md (@EvanHsieh0415)
+
+# 0.1.3
+
+Fix mods.toml for `versionRange`
+
+- update mods.toml (@EvanHsieh0415)
+- package files (@EvanHsieh0415)
+- upload CHANGELOG.md (@EvanHsieh0415)
