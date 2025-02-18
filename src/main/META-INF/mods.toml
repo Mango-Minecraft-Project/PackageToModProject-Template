@@ -1,5 +1,5 @@
 modLoader = "lowcodefml"
-loaderVersion = "[40,43,47]" # 40: 1.18.2, 43: 1.19.2, 47: 1.20.1
+loaderVersion = "[40,)" # 40: 1.18.2, 43: 1.19.2, 47: 1.20.1
 license = "AGPL v3.0"
 issueTrackerURL = "https://github.com/Mango-Minecraft-Project/Create_Mortar/issues"
 showAsDataPack = true
