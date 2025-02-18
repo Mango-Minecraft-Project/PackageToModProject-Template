@@ -41,3 +41,6 @@ Fix mods.toml for `versionRange`
 - update mods.toml (@EvanHsieh0415)
 - package files (@EvanHsieh0415)
 - upload CHANGELOG.md (@EvanHsieh0415)
+- update mods.toml (@EvanHsieh0415)
+- package files (@EvanHsieh0415)
+- upload CHANGELOG.md (@EvanHsieh0415)
