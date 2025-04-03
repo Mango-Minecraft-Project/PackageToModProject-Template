@@ -13,7 +13,7 @@
 
 {Description}
 
----
+
 
 [modrinth-badge]: https://img.shields.io/modrinth/dt/{modrinth-project-id}?style=for-the-badge&logo=modrinth&labelColor=16181c&color=00ad5b
 [modrinth-link]: https://modrinth.com/projects/...
