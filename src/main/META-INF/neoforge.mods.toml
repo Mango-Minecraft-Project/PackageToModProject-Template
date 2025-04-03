@@ -1,4 +1,4 @@
-# https://docs.minecraftforge.net/en/latest/gettingstarted/modfiles/
+# https://docs.neoforged.net/docs/gettingstarted/modfiles
 
 modLoader = "lowcodefml"
 loaderVersion = "[1,)" # https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
@@ -7,7 +7,6 @@ license = "AGPL-3.0"
 issueTrackerURL = "https://github.com/"
 # showAsDataPack = false
 # showAsResourcePack = false
-# clientSideOnly = false
 
 [[mods]]
 modId = ""
@@ -22,7 +21,8 @@ authors = ""
 
 [[dependencies.mod_id]]
 modId = "minecraft"
-mandatory = true
+# type = "required" # required, optional, discouraged or incompatible. default is required
+# reason = ""
 # versionRange = "" # https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
 # ordering = "NONE" # NONE, AFTER, BEFORE. default is NONE
 # side = "BOTH" # BOTH, CLIENT, SERVER. default is BOTH
