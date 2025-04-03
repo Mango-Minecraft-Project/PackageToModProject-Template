@@ -15,9 +15,9 @@
 
 ---
 
-[modrinth-badge]: https://img.shields.io/curseforge/dt/963805?style=for-the-badge&logo=curseforge&label=CurseForge%20Downloads&labelColor=0d0d0d&color=ff784d
+[modrinth-badge]: https://img.shields.io/modrinth/dt/{modrinth-project-id}?style=for-the-badge&logo=modrinth&labelColor=16181c&color=00ad5b
 [modrinth-link]: https://modrinth.com/projects/...
-[curseforge-badge]: https://img.shields.io/badge/CurseForge-313338?style=for-the-badge&logo=CurseForge
+[curseforge-badge]: https://img.shields.io/curseforge/dt/{curseforge-project-id}?style=for-the-badge&logo=curseforge&label=CurseForge%20Downloads&labelColor=0d0d0d&color=ff784d
 [curseforge-link]: https://www.curseforge.com/projects/...
 [discord-badge]: https://img.shields.io/discord/{discord-id}?style=for-the-badge&logo=discord&label=discord&labelColor=2b2d31&color=23a55a
 [discord-link]: https://discord.com/invite/...
