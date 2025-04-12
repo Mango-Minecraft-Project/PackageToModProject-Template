@@ -11,10 +11,10 @@
 
   // - Dependency resolution
   "depends": {},
-  "recommends": {},
-  "suggests": {},
-  "breaks": {},
-  "conflicts": {},
+  // "recommends": {},
+  // "suggests": {},
+  // "breaks": {},
+  // "conflicts": {},
 
   // - Metadata
   "name": "",

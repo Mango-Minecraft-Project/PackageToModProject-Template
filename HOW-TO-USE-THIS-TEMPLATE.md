@@ -20,8 +20,9 @@ This template is designed to help you create a new project quickly and efficient
 4. Update `src/main/pack.png` with your mod's icon. The image should be 128x128 pixels or a power of 2 size (e.g., 256x256, 512x512).
 5. Update `src/main/fabric.mod.json` / `src/main/META-INF/mods.toml` / `src/main/META-INF/neoforge.mods.toml` with your mod's metadata.
    1. Update the `id`, `name`, `version`, and `description` fields.
-   2. Add any required dependencies as needed.
-   3. Delete unused mod loader files.
+   2. (`fabric.mod.json` only) Delete all comments in the file.
+   3. Add any required dependencies as needed.
+   4. Delete unused mod loader files.
 6. Add your content to the `src/main/data` or `src/main/assets` directory. This is where you will place your mod's resources, such as textures, models, and data packs.
 7. (Forge Only) Update `src/main/pack.mcmeta` with your mod's pack metadata. This file is used to define the pack format and other settings for your mod.
 
