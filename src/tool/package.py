@@ -1,15 +1,13 @@
 import zipfile
 import tomllib
+import json
 from typing import Literal
 from pathlib import Path
 
-import pyjson5
+from global_variable import CWD, MAIN, GENERATED
 
-
-CWD = Path.cwd()
-MAIN = CWD / "src/main"
-
-package_type = Literal["data_pack", "resource_pack", "mod"]
+PACKAGE_TYPE = Literal["data_pack", "resource_pack", "mod"]
+SOURCE_TYPE = Literal["main", "generated"]
 
 
 def get_metadata():
@@ -21,21 +19,21 @@ def get_metadata():
             return ("neoforge", tomllib.load(file))
     elif (fabric_metadata := MAIN / "fabric.mod.json").is_file():
         with fabric_metadata.open("r", encoding="utf-8") as file:
-            return ("fabric", pyjson5.load(file))
+            return ("fabric", json.load(file))
     else:
         raise FileNotFoundError(
             "No metadata file found. Please ensure META-INF/mods.toml, META-INF/neoforge.mods.toml or fabric.mod.json exists."
         )
 
 
-def get_files(type: package_type):
+def get_files(package_type: PACKAGE_TYPE, source_type: SOURCE_TYPE):
     """get files from src/main/ folder
 
     Args:
         type (str): type of file to get
     """
     files = []
-    match type:
+    match package_type:
         case "data_pack":
             files = ["data/", "pack.png", "pack.mcmeta"]
         case "resource_pack":
@@ -49,7 +47,10 @@ def get_files(type: package_type):
                 "pack.mcmeta",
                 "fabric.mod.json",
             ]
-    return filter(lambda path: path.exists(), map(lambda path: MAIN / path, files))
+    return filter(
+        lambda path: path.exists(),
+        map(lambda path: (MAIN if source_type == "main" else GENERATED) / path, files),
+    )
 
 
 def get_version() -> str:
@@ -66,7 +67,7 @@ def get_version() -> str:
         )
 
 
-def get_output_filename(type: package_type, version: str):
+def get_output_filename(type: PACKAGE_TYPE, version: str):
     """get extension for package
 
     Args:
@@ -91,7 +92,7 @@ def get_output_filename(type: package_type, version: str):
     return f"{filename}-{suffix[type]}-{version}.{extension}"
 
 
-def package(type: package_type):
+def package(type: PACKAGE_TYPE):
     """package mod or data pack
 
     Args:
@@ -99,28 +100,34 @@ def package(type: package_type):
     """
     version = get_version()
     output_filename = get_output_filename(type, version)
-    files = get_files(type)
+    main_files = get_files(type, "main")
+    generated_files = get_files(type, "generated")
 
     output_path = CWD / "versions" / output_filename
     if output_path.exists():
         output_path.unlink()
 
     with zipfile.ZipFile(output_path, "w") as zip:
-        for file in files:
+
+        def write_file(file: Path, relative_to: Path):
             if file.is_dir():
                 for path in file.rglob("*"):
-                    zip.write(path, path.relative_to(MAIN))
+                    zip.write(path, path.relative_to(relative_to))
             else:
                 zip.write(file, file.name)
+
+        for file in main_files:
+            write_file(file, MAIN)
+
+        for file in generated_files:
+            write_file(file, GENERATED)
+
         print(f"Packaged {type} for version {version} to {output_filename}")
 
 
 def main():
     # package("data_pack")
     # package("resource_pack")
-    # package("mod")
-    ...
+    package("mod")
 
-
-if __name__ == "__main__":
-    main()
+main()
